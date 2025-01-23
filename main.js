@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',() => {
     const guessButton = document.getElementById('guessButton');
     const message = document.getElementById('message');
     const attemptsDisplay = document.getElementById('attempts');
-    const restarButton = document.getElementById('restartButton');
+    const restartButton = document.getElementById('restartButton');
 
     let randomNumber;
     let attempts;
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',() => {
         guessInput.value = '';
         guessInput.disabled = false;
         guessButton.disabled = false;
-        restarButton.style.display = 'none';
+        restartButton.style.display = 'none';
     }
 
     guessButton.addEventListener('click',() => {
