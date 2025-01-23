@@ -35,7 +35,10 @@ document.addEventListener('DOMContentLoaded',() => {
             message.textContent = 'Muito alto! Tente novamente.'
         }
         guessInput.value = '';
-    })
+    });
+    restartButton.addEventListener('click',() => {
+        startGame();
+    });
 
     startGame()
 });
